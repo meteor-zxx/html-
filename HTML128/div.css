@@ -1,0 +1,50 @@
+      * {
+          margin: 0;
+          padding: 0;
+
+
+      }
+
+
+
+      #div1 {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          padding-left: 50%;
+      }
+
+      #div2 {
+          width: 150px;
+          height: 150px;
+          background-color: blue;
+          padding-right: 40%;
+      }
+
+      #div3 {
+          /* solid 细实线 border 上下左右边框 取值三个 粗细 颜色 边框线条样式 */
+          border: 100px #00f700 solid;
+          box-sizing: border-box;
+          border-radius: 100px;
+      }
+
+      #test {
+          width: 200px;
+          height: 300px;
+          box-sizing: border-box;
+          margin-left: 100px;
+          margin-top: 100px;
+          border: #00f700 10px dotted;
+          border-radius: 50px;
+      }
+
+      #test2 {
+          width: 200px;
+          height: 200px;
+          box-sizing: border-box;
+          margin-left: 100px;
+          margin-top: 100px;
+          border: #00f700 10px solid;
+          border-radius: 100%;
+
+      }

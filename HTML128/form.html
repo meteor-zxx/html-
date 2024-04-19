@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单示例</title>
+</head>
+
+<body>
+    <!-- form 是一个表单，action属性，表示要提交给谁处理这个表单，通常写的是服务器的地址 -->
+    <ul>
+        <form action="">
+            <!-- input表示要显示一个表单元素，type决定了元素类型 name是当前元素的名称 placeholder表示提示文本-->
+            <li> <input type="text" name="username" placeholder="昵称">
+            </li>
+
+            <li><input type="password" name="pwd" placeholder="密码">
+            </li>
+            <!-- select代表下拉选择框，name代表名字，id代表编号，通常与name相同 -->
+            <!-- 每个项都是一个option value是提交的值，中间的文字是给用户看的 -->
+            <li><select name="qu" id="qu">
+                    <option value="86">中国大陆+86</option>
+                    <option value="852">中国香港+852</option>
+                    <option value="853">中国台湾+853</option>
+                    <option value="886">中国澳门+886</option>
+                </select>
+                <input type="phone" name="phonenum" placeholder="手机密码">
+            </li>
+            <!-- radio代表单选框 -->
+            <li>
+                <input type="radio" name="pro" value="1">我已阅读同意服务协议和隐私保护协议
+                <input type="radio" name="pro" value="1">我已阅读同意服务协议和隐私保护协议
+            </li>
+            <li>
+                <!-- submi代表提交按钮 -->
+                <input type="submit" name="submit" value="立即注册">
+            </li>
+        </form>
+
+
+    </ul>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 300px;
+            padding: 16px;
+            background-color: white;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>注册</h1>
+        <form>
+            <label for="uname"><b>用户名</b></label>
+            <input type="text" placeholder="输入用户名" name="uname" required>
+
+            <label for="psw"><b>密码</b></label>
+            <input type="password" placeholder="输入密码" name="psw" required>
+
+            <label for="phone"><b>手机号码</b></label>
+            <input type="tel" placeholder="输入手机号码" name="phone" pattern="^\d{11}$" required>
+
+            <label for="country_code"><b>国家代码</b></label>
+            <input type="text" placeholder="输入国家代码" name="country_code" required>
+
+            <label for="verification"><b>验证码</b></label>
+            <input type="text" placeholder="输入验证码" name="verification" required>
+
+            <button type="submit">注册</button>
+        </form>
+    </div>
+</body>
+
+</html>
